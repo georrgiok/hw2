@@ -1,0 +1,7 @@
+// Напишите программу, которая принимает на вход случайно сгенерированное трёхзначное число и на выходе показывает вторую цифру этого числа
+
+int rand = new Random().Next(100, 999);
+Console.WriteLine(rand);
+int digit = rand / 10;
+int digi = digit % 10;
+Console.WriteLine (digi);
