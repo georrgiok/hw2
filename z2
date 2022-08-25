@@ -1,0 +1,13 @@
+// Напишите программу, которая выводит третью цифру случайно сгенерированного числа (от 1 до 65536) или сообщает, что третьей цифры нет
+int a = new Random().Next(1, 65536);
+Console.WriteLine(a);
+int rand = Convert.ToInt32(a);
+string randi= Convert.ToString(rand);
+if (randi.Length > 2)
+{
+  Console.WriteLine( randi[2]);
+}
+else {
+ 
+  Console.WriteLine(" третьей цифры нет");
+}
